@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@v0.181.2/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.181.2/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="scripts/main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <title>Wheelbuilder</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo"><a href="index.html">Wheel Builder Simulator</a></h2>
+        <nav  class="nav-links">
+            <ul>
+                <li><a id="nav-start" class="nav-button" href="index.html">Start</a></li>
+                <li><a id="nav-stations" class="nav-button" href="#stations">Stations</a></li>
+                <li><a id="nav-about" class="nav-button" href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <ul class="sub-menu">
+        <li id="intro" class="nav-button">1. Intro</li>
+        <li id="load" class="nav-button">2. Loading</li>
+        <li id="flip" class="nav-button">3. Flip</li>
+        <li id="lace" class="nav-button">4. Lacing</li>
+    </ul>
+    <main>
+        <section class="main-about">
+            <h1>About the Virtual Wheel Builder</h1>
+            <h2>This application will show step-by-step how to build a bicycle wheel.</h2>
+            <p>I'm Peter, the author of this app.</p>
+            <button id="startButton">Start Now</button>
+            <p>I built thousands of wheels for Santa Cruz and Cervélo bicycles, </p>
+            <p>and wanted to share what I learned.</p>
+            <p>My goal was to get the app working with Three.js and make it as interactive as 
+                possible to share this knowledge!</p>
+        </section>
+        <div id="threejs-canvas"></div>
+    </main>
+    <footer>
+        <p>&copy; Peter Slempers 2025</p>
+            <span class="caption">
+                <img src="images/double_arrow_left.png" alt="navigate-back-arrow-image" class="prevBtn">
+                <span id="stage-caption">
+                </span>
+                <img src="images/double_arrow_right.png" alt="navigate-next-arrow-image" class="nextBtn">
+            </span>
+        <button id="reset-cam">Reset Camera</button>
+    </footer>
+</body>
+</html>
