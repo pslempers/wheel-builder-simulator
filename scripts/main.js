@@ -311,8 +311,6 @@ renderer.domElement.style.display = "none";
         camFix = true;
     });
 
-
-
     // LOADING THE GLTF MODEL WITH GLTF LOADER //
     // https://threejs.org/docs/#GLTFLoader
 

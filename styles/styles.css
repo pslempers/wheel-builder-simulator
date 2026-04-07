@@ -116,6 +116,16 @@ header nav ul li .selected {
     background-color: var(--secondary-color);
     padding: 1em 2em;
 }
+#modal-button {
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+#my-dialog {
+  position:absolute;
+  width:100%;
+  height:100%;
+}
 
 /* -- b. Sub-menu Styles -- */
 .sub-menu {
